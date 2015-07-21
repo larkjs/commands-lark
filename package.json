@@ -1,0 +1,27 @@
+{
+  "name": "commands-lark",
+  "version": "1.0.0",
+  "description": "larkjs framework command line module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larkjs/commands-lark.git"
+  },
+  "keywords": [
+    "larkjs"
+  ],
+  "author": "larkjs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larkjs/commands-lark/issues"
+  },
+  "homepage": "https://github.com/larkjs/commands-lark",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "generator-lark": "^0.5.3",
+    "shelljs": "^0.5.1"
+  }
+}

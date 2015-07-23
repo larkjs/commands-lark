@@ -11,7 +11,7 @@ process.on('exit', function () {
 });
 
 if (!pkg || !pkg.version) {
-    throw new Error("pakage.json is required, version must be set");
+    throw new Error("package.json is required, version must be set");
     return;
 }
 

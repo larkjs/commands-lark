@@ -29,7 +29,7 @@ module.exports = function(command){
         console.error(err);
     });
 
-    env.larkPkg = require(process.cwd()+'/package.json');
+    env.larkPkg = require('../../package.json'); //向上两层目录去require lark的package.json
 
     env.run(command);
 };

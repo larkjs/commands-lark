@@ -1,7 +1,7 @@
 'use strict';
 
 var program  = require('commander');
-var pkg  = require(process.cwd()+'/package.json'); //package.json infomation about lark framework
+var pkg  = require('../../package.json'); //package.json infomation about lark framework
 var cmd_for_global  = require('./lib/global');
 var cmd_for_app     = require('./lib/app');
 

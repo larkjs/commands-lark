@@ -1,6 +1,6 @@
 {
   "name": "lark-commands",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "larkjs framework command line module",
   "main": "index.js",
   "scripts": {

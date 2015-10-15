@@ -6,26 +6,26 @@
 
 'use strict';
 
-var path = require('path');
+const path = require('path');
 
-module.exports = function(command){
+module.exports = (command) => {
     /**
      * Requiring yeoman may cost several seconds,
      * So we'd like to require it when yeoman is indeed needed
      * rather than once this module is required
      **/
     console.log("Starting yeoman generator, please wait...");
-    var yeoman = require('generator-lark/node_modules/yeoman-generator');
+    let yeoman = require('generator-lark/node_modules/yeoman-generator');
 
-    var env = yeoman();
-    var root = path.dirname(require.resolve('generator-lark/package.json'));
-    var cwd = process.cwd();
+    let env = yeoman();
+    let root = path.dirname(require.resolve('generator-lark/package.json'));
+    let cwd = process.cwd();
 
     process.chdir(root);
     env.lookup();
     process.chdir(cwd);
 
-    env.on('error', function(err){
+    env.on('error', (err) => {
         console.error(err);
     });
 

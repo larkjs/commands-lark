@@ -1,12 +1,12 @@
 'use strict';
 
-var program  = require('commander');
-var pkg  = require('../../package.json'); //package.json infomation about lark framework
-var cmd_for_global  = require('./lib/global');
-var cmd_for_app     = require('./lib/app');
+const program         = require('commander');
+const pkg             = require('../../package.json'); //package.json infomation about lark framework
+const cmd_for_global  = require('./lib/global');
+const cmd_for_app     = require('./lib/app');
 
 process.orig_cwd = process.cwd();
-process.on('exit', function () {
+process.on('exit', () => {
     process.chdir(process.orig_cwd);
 });
 
@@ -23,7 +23,7 @@ cmd_for_app();
 program
     .command("*")
     .description("show help")
-    .action(function () {
+    .action(() => {
         program.outputHelp();
     });
 

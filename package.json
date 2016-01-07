@@ -21,7 +21,9 @@
   "homepage": "https://github.com/larkjs/commands-lark",
   "dependencies": {
     "commander": "^2.8.1",
-    "generator-lark": "^0.5.3",
     "shelljs": "^0.5.1"
+  },
+  "devDependencies": {
+    "generator-lark": "^0.5.3"
   }
 }

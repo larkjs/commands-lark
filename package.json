@@ -1,6 +1,6 @@
 {
   "name": "lark-commands",
-  "version": "0.2.0-alpha",
+  "version": "0.2.0-alpha-1",
   "description": "larkjs framework command line module",
   "main": "index.js",
   "scripts": {
@@ -21,9 +21,7 @@
   "homepage": "https://github.com/larkjs/commands-lark",
   "dependencies": {
     "commander": "^2.8.1",
-    "shelljs": "^0.5.1"
-  },
-  "devDependencies": {
+    "shelljs": "^0.5.1",
     "generator-lark": "^0.5.3"
-  }
+  },
 }

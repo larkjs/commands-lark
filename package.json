@@ -23,5 +23,5 @@
     "commander": "^2.8.1",
     "shelljs": "^0.5.1",
     "generator-lark": "^0.5.3"
-  },
+  }
 }
